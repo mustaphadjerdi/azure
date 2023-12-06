@@ -2,13 +2,13 @@ trigger:
 - '*'
 
 pool:
-  name: azure
+  name: testAgent
 
 jobs:
 - job: RunOnTestAgent
   displayName: 'Run on testAgent'
   pool:
-    name: azure
+    name: testAgent
   steps:
   - script: echo "Hello, this job is running on the testAgent!"
     displayName: 'Run a simple command on the testAgent'
